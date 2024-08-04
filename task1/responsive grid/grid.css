@@ -1,0 +1,92 @@
+:root {
+  --transition-duration: 0.3s; /* Define a variable for the transition duration */
+  --text-color-default : #333; /* Default text color */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  display: block;
+  object-fit: cover;
+  transition: filter var(--transition-duration) ease;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col {
+  width: 500px; /* Fixed width */
+  height: auto; /* Fixed height */
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 60px;
+  margin: 20px;
+  position: relative;
+  transition: background-color var(--transition-duration) ease;
+  border-radius:20px ;
+}
+h3,p {
+  transition: color var(--transition-duration) ease;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: var(--text-color-default);
+}
+
+p {
+  font-size: 20px;
+  color: #555;
+  line-height: 1.6;
+  text-align:left;
+}
+
+.row {
+  margin-bottom: 30px;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+
+
+.col:hover h3,
+.col:hover p {
+  animation: colorChange 0.5s forwards;
+}
+
+@keyframes colorChange {
+  0% {
+    color: var(--text-color-default);
+  }
+  100% {
+    color: var(--text-color);
+  }
+}
+
+.col[data-lang="python"] {
+  --text-color: #306998;
+}
+
+.col[data-lang="javascript"] {
+  --text-color: #f7df1e;
+}
+
+.col[data-lang="typescript"] {
+  --text-color: #007acc;
+}
+
+.col[data-lang="go"] {
+  --text-color: #00add8;
+}
+
+.col[data-lang="rust"] {
+  --text-color: #dea584;
+}
+
+.col[data-lang="kotlin"] {
+  --text-color: #f18e8e;
+}
