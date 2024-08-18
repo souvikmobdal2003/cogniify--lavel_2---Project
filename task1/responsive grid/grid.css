@@ -1,6 +1,6 @@
 :root {
-  --transition-duration: 0.3s; /* Define a variable for the transition duration */
-  --text-color-default : #333; /* Default text color */
+  --transition-duration: 0.3s; 
+  --text-color-default : #333;
 }
 
 img {
@@ -16,8 +16,8 @@ img {
 }
 
 .col {
-  width: 500px; /* Fixed width */
-  height: auto; /* Fixed height */
+  width: 500px; 
+  height: auto; 
   text-align: center;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   padding: 60px;
